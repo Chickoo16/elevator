@@ -43,8 +43,8 @@ document.getElementById("arrowLevel1-up").addEventListener("click", function() {
         //arrowLevel1Up = true;
     }
     //document.getElementById("arrowLevel1-up").src="images/greenArrow.png";
-    if(count === 1)
-    document.getElementById("elevator").style.animationPlayState="paused";
+    //if(count === 1)
+    //document.getElementById("elevator").style.animationPlayState="paused";
     arrowLevel1Up = true;
 
     if(count > 1) {
