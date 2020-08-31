@@ -20,7 +20,7 @@ document.getElementById("bottomArrow").addEventListener("click", function() {
     let timer1 = setInterval(function() {
     let timePassed = Date.now() - start; 
     //console.log(timePassed);
-    if(timePassed >5000 && groundLevel === true) {
+    if(timePassed >10000 && groundLevel === true) {
 
         document.getElementById("elevator").style.animationPlayState="paused";
     }
@@ -55,7 +55,7 @@ document.getElementById("arrowLevel1-up").addEventListener("click", function() {
         let timer2 = setInterval(function() { 
             let timePassed = Date.now() - start; 
             //console.log(timePassed);
-            if(timePassed > 5000 && arrowLevel2 === true) {
+            if(timePassed > 10000 && arrowLevel1Up === true) {
                 document.getElementById("elevator").style.animationPlayState="paused";
                 //timePassed = 0;
             }
@@ -91,7 +91,7 @@ document.getElementById("arrowLevel1-down").addEventListener("click", function()
         let timer3 = setInterval(function() {
             let timePassed = Date.now() - start;
             //console.log(timePassed);
-            if(timePassed > 5000 && groundLevel === true) {
+            if(timePassed > 10000 && arrowLevel1Down  === true) {
                 document.getElementById("elevator").style.animationPlayState="paused";
                 //timePassed = 0;
             }
@@ -122,7 +122,7 @@ document.getElementById("arrowLevel2").addEventListener("click", function() {
         let timer2 = setInterval(function() {
             let timePassed = Date.now() - start; 
             //console.log(timePassed);
-            if(timePassed > 5000 && arrowLevel1Down === true) {
+            if(timePassed > 10000 && arrowLevel2 === true) {
                 document.getElementById("elevator").style.animationPlayState="paused";
                 //timePassed = 0;
             }
