@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="row-1">
+            <div class="col-md-3 modal-dialog-centered">
+                <div class="image">
+                    <img id="arrowLevel2" src="images/arrow.png" width="80" height="80">
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+            </div>
+            <div class="col-md-3 modal-dialog-centered">
+                <span class="level">
+                    <button class="btn btn-lg btn-outline-success">
+                        Level 2
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="row" id="row-2">
+            <div class="col-md-3 modal-dialog-centered">
+                <div class="image">
+                    <img id="arrowLevel1-up" src="images/arrow.png" width="80" height="80">
+                </div>
+                <div class="image">
+                    <img id="arrowLevel1-down" src="images/arrow.png" width="80" height="80">
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <hr class="hr">
+            </div>
+            <div class="col-md-3 modal-dialog-centered">
+                <span class="level">
+                    <button class="btn btn-lg btn-outline-success">
+                        Level 1
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="row" id="row-3">
+            <div class="col-md-3 modal-dialog-centered">
+                <div class="image">
+                  <img id="bottomArrow" src="images/arrow.png" width="80" height="80">  
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <hr class="hr">
+                <div class="elevator" id="elevator">
+                    <img src="images/elevator.png" width="250" height="250">
+                </div>
+            </div>
+            <div class="col-md-3 modal-dialog-centered">
+                <span class="level">
+                    <button class="btn btn-lg btn-outline-success">
+                        Ground level
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

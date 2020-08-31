@@ -1,0 +1,45 @@
+.hr {
+    border-top: 2px solid;
+}
+
+.level {
+    padding-left: 25%;
+}
+
+.image {
+    padding-left: 25%;
+}
+
+#arrowLevel2 {
+    transform: rotate(180deg);
+}
+
+#arrowLevel1-down {
+    transform: rotate(180deg);
+}
+
+#row-1 {
+    height: 33.33%;
+    width: 100%;
+}
+
+#row-2 {
+    height: 33.33%;
+    width: 100%;
+}
+
+#row-3 {
+    height: 33.33%;
+    width: 100%;
+}
+
+.elevator {
+    position: relative;
+    animation: anime 10s infinite alternate;
+}
+
+@keyframes anime {
+    0%  {bottom: 0%;}
+    50%  {bottom: 100%}
+    100%  {bottom: 200%}   
+}
