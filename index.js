@@ -65,10 +65,10 @@ document.getElementById("arrowLevel1-up").addEventListener("click", function() {
         })
     }
 })
-
+/*
 if(arrowLevel1Up === false && groundLevel === true)
 document.getElementById("elevator").style.animationPlayState="running";
-
+*/
 
 let arrowLevel1Down = false;
 let countArrowLevel1Down = 0;
