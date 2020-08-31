@@ -50,7 +50,7 @@ document.getElementById("arrowLevel1-up").addEventListener("click", function() {
     if(count > 1) {
         arrowLevel1Up = false;
     }
-    if(count === 2) {
+    if(count >= 2) {
         let start = Date.now();
         let timer2 = setInterval(function() { 
             let timePassed = Date.now() - start; 
@@ -85,7 +85,7 @@ document.getElementById("arrowLevel1-down").addEventListener("click", function()
     
     if(countArrowLevel1Down > 1)
     arrowLevel1Down = false;
-    if(countArrowLevel1Down === 2) {
+    if(countArrowLevel1Down >= 2) {
         //arrowLevel1Down = false; 
         let start = Date.now();
         let timer3 = setInterval(function() {
@@ -117,7 +117,7 @@ document.getElementById("arrowLevel2").addEventListener("click", function() {
     
     if(countArrowLevel2 > 1) {
         arrowLevel2 = false; //arrowLevel1Up = false;
-        if(countArrowLevel2 === 2) {
+        if(countArrowLevel2 >= 2) {
             let start = Date.now();
         let timer2 = setInterval(function() {
             let timePassed = Date.now() - start; 
