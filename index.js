@@ -20,7 +20,7 @@ document.getElementById("bottomArrow").addEventListener("click", function() {
     let timer1 = setInterval(function() {
     let timePassed = Date.now() - start; 
     //console.log(timePassed);
-    if(timePassed >5000 && groundLevel === true) {
+    if(timePassed >5000 && arrowLevel1Up === true) {
 
         document.getElementById("elevator").style.animationPlayState="paused";
     }
