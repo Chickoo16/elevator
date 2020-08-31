@@ -21,7 +21,7 @@ document.getElementById("bottomArrow").addEventListener("click", function() {
     let timePassed = Date.now() - start; 
     //console.log(timePassed);
     if(timePassed >5000 && arrowLevel1Up === true) {
-        //timePassed = 0;
+        timePassed = 0;
         document.getElementById("elevator").style.animationPlayState="paused";
     }
 })
@@ -57,6 +57,7 @@ document.getElementById("arrowLevel1-up").addEventListener("click", function() {
             //console.log(timePassed);
             if(timePassed > 5000 && arrowLevel2 === true) {
                 document.getElementById("elevator").style.animationPlayState="paused";
+                timePassed = 0;
             }
             else {
                 document.getElementById("elevator").style.animationPlayState="running";
@@ -92,6 +93,7 @@ document.getElementById("arrowLevel1-down").addEventListener("click", function()
             //console.log(timePassed);
             if(timePassed > 5000 && groundLevel === true) {
                 document.getElementById("elevator").style.animationPlayState="paused";
+                timePassed = 0;
             }
             else {
                 document.getElementById("elevator").style.animationPlayState="running";
@@ -122,6 +124,7 @@ document.getElementById("arrowLevel2").addEventListener("click", function() {
             //console.log(timePassed);
             if(timePassed > 5000 && arrowLevel1Down === true) {
                 document.getElementById("elevator").style.animationPlayState="paused";
+                timePassed = 0;
             }
             else {
                 document.getElementById("elevator").style.animationPlayState="running";
@@ -132,5 +135,5 @@ document.getElementById("arrowLevel2").addEventListener("click", function() {
     }
 })
 
-let a = document.getElementById("elevator").style.animationTimingFunction
-console.log
+
+
