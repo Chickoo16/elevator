@@ -1,7 +1,19 @@
+let countGroundLevel = 0;
 let groundLevel = false;
 document.getElementById("bottomArrow").addEventListener("click", function() {
-    document.getElementById("bottomArrow").src="images/greenArrow.png";
-    groundLevel = true;
+    countGroundLevel = countGroundLevel + 1;
+    if(countGroundLevel%2 === 0) {
+       document.getElementById("bottomArrow").src="images/arrow.png";
+        groundLevel = false;
+    }
+    else {
+       document.getElementById("bottomArrow").src="images/greenArrow.png";
+        groundLevel = true;
+    }
+
+        
+    //document.getElementById("bottomArrow").src="images/greenArrow.png";
+    //groundLevel = true;
     document.getElementById("elevator").style.animationPlayState="running";
     let start = Date.now();
 
@@ -15,7 +27,7 @@ document.getElementById("bottomArrow").addEventListener("click", function() {
 })
 })
 
-if(groundLevel === false)
+if(countGroundLevel === 0)
 document.getElementById("elevator").style.animationPlayState="paused";
 
 let arrowLevel1Up = false;
